@@ -57,3 +57,31 @@ getCaseOfSum(2, [1, 2, 1, 3, 1, 1, 1, 2]) // 4
 8. 반복문이 끝난 뒤 계산된 count를 리턴해준다
 
 강의를 보고 시간복잡도를 줄여 푸는 방법을 다시 정리해보겠다.
+
+- 새로 풀어본 방법
+
+```javascript
+const getCaseOfSum = (sum, arr) => {
+  let lt = 0
+  let rt = 0
+  let count = 0
+  let calculatedSum = 0
+  while (rt < arr.length) {
+    if (calculatedSum < sum) {
+      calculatedSum += arr[rt]
+      rt++
+    } else if (calculatedSum === sum) {
+      count++
+      calculatedSum -= arr[lt]
+      lt++
+    } else if (calculatedSum > sum) {
+      calculatedSum -= arr[lt]
+      lt++
+    }
+  }
+  return count
+}
+
+getCaseOfSum(6, [1, 2, 1, 3, 1, 1, 1, 2])
+getCaseOfSum(5, [1, 2, 1, 3, 1, 1, 1, 2])
+```
