@@ -1,8 +1,8 @@
-# 문제
+# ☑️ 문제
 
 <img width="683" alt="스크린샷 2022-06-16 오후 2 53 31" src="https://user-images.githubusercontent.com/71131248/174001351-d1e6ebbc-2d1a-44b6-8311-d8a739b31b8b.png">
 
-# 사용 메서드
+# ☑️ 사용 메서드
 
 ## Array.prototype.slice() <br/>
 
@@ -34,7 +34,7 @@ console.log(animals.slice());
 
 sort() 메서드는 배열의 요소를 적절한 위치에 정렬한 후 그 배열을 반환합니다. 기본 정렬 순서는 문자열의 유니코드 코드 포인트를 따릅니다.
 
-# 코드
+# ☑️ 코드
 
 ```javascript
 function solution(array, commands) {
@@ -58,7 +58,7 @@ function solution(array, commands) {
 테스트 6 〉 통과 (0.07ms, 30MB)<br />
 테스트 7 〉 통과 (0.07ms, 29.8MB)
 
-# 문제 풀이
+# ☑️ 문제 풀이
 
 1. 결과 값을 담을 빈 배열인 result를 선언한다.
 2. 두 번째 인자로 들어온 배열의 요소를 담고 있는 배열을 for 문을 통해 하나의 배열 요소씩 순회한다.
